@@ -33,7 +33,7 @@ const Item = ({item,addToCart}) => {
                     <LazyLoadImage
                     alt={item.title}    
                     effect="blur"               
-                    src={item.image} // use normal <img> attributes as props
+                    src={item.image}
                     className='h-[40vh] md:h-[30vh] object-cover py-2'/>
                     </Link>
                    <div className='flex justify-center items-center border-0 border-slate-400 py-0 px-2 mb-2'>

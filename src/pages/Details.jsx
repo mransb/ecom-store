@@ -48,7 +48,7 @@ const Details = ({addToCart}) => {
         <LazyLoadImage
                     alt={item.title}    
                     effect="blur"               
-                    src={item.image} // use normal <img> attributes as props
+                    src={item.image} 
                    />
         </div>       
     </div>

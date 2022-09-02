@@ -24,7 +24,7 @@ const Home = ({items,fetchProductByCategory,fetchProducts,addToCart,showLoading}
         
     
 </nav>
-    <div className='w-full bg-slate-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-8 place-items-center px-4 py-3 mt-8 relative z-[5]'>      
+    <div className='w-full bg-slate-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-8 place-items-center px-4 py-3 mb-5 mt-8 relative z-[5]'>      
         {items && items.map(item=>(
             item.count=1,           
             <Item key={item.id} item={item} addToCart={addToCart} />

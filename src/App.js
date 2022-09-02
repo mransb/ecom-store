@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { BrowserRouter,Routes,Route }  from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from "./components/Footer"
 import Home from './pages/Home'
 import axios from './helpers/apiClient'
 import Details from './pages/Details'
@@ -117,6 +118,7 @@ const[backup,setBackUp]=useState([])
       <Route path="/" element={<Home items={items} isLoading={isLoading}  fetchProductByCategory={fetchProductByCategory} fetchProducts={fetchProducts} addToCart={addToCart} showLoading={showLoading} />}/>
       <Route path="/details/:id" element={<Details addToCart={addToCart} showLoading={showLoading}/>}/>
     </Routes>
+    <Footer />
     </BrowserRouter>
   )
 } 
